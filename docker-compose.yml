@@ -1,0 +1,12 @@
+version: '3.4'
+
+
+services:
+  emulate:
+    image: lukechilds/dockerpi
+    ports:
+      - "5022:5022"
+    volumes:
+      - ./image_2021-10-29-Raspbian-lite.zip:/filesystem.zip
+      - ./entrypoint.sh:/entrypoint.sh
+    command: pi2
