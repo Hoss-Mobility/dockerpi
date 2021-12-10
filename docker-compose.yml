@@ -7,6 +7,7 @@ services:
     ports:
       - "5022:5022"
     volumes:
-      - ./image_2021-10-29-Raspbian-lite.zip:/filesystem.zip
+      - ./images:/images
+      - ./images/yourZippedImage:/filesystem.zip
       - ./entrypoint.sh:/entrypoint.sh
     command: pi2

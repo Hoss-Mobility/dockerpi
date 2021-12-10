@@ -21,6 +21,12 @@ This is not just a Raspian Docker image, it's a full ARM based Raspberry Pi virt
 	<img src="media/demo.svg" width="720">
 </div>
 
+## Docker-compose
+
+Just run `docker-compose up --force-recreate emulate` for a clean container with a fresh unpacked local image. In order to connect to the container
+use ssh with port 5022 `ssh -p 5022 hoss@localhost`.
+
+
 ## Usage
 
 ```
